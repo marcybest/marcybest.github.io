@@ -87,10 +87,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/example.gif");
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/example.gif");
-		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/example.gif");
-		background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/example.gif");
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/orbits.gif");
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/orbits.gif");
+		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/orbits.gif");
+		background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/orbits.gif");
 		background-color: #000000;
 		background-position: top left, top left;
 		background-repeat: repeat-x, repeat;
@@ -131,8 +131,8 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #444;
-		font-weight: 800;
+		color: #fff;
+		font-weight: 600;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -142,9 +142,10 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2.25em;
+		font-size: 2em;
 		margin: 0 0 1.1em 0;
 		line-height: 1em;
+
 	}
 
 	h3 {
@@ -168,7 +169,8 @@ input, select, textarea {
 	sub {
 		position: relative;
 		top: 0.5em;
-		font-size: 0.8em;
+		font-size: 1.5em;
+		color: #777;
 	}
 
 	sup {
@@ -189,7 +191,9 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
+		color: #bbb;
+		padding-bottom: 0.75em;
 	}
 
 /* Container */
@@ -1591,7 +1595,8 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
-			border-radius: 8px;
+			border-radius: 50px;
+			/*border: 5px solid #555;*/
 		}
 
 		.image.fit {
@@ -1779,10 +1784,11 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff040;
-		border-radius: 60px;
+		background: #000;
+		border-radius: 50px;
 		box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
 		padding: 2em;
+		border: 5px solid #fff;
 	}
 
 		.box.feature {
@@ -1965,7 +1971,7 @@ input, select, textarea {
 		position: absolute;
 		right: 0;
 		top: 0;
-		font-size: 0.9em;
+		font-size: 1em;
 	}
 
 		#nav ul {
