@@ -86,8 +86,17 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	@keyframes orbits {
+	  0%   {background-color:red}
+	  25%  {background-color:yellow}
+	  50%  {background-color:blue;}
+	  75%  {background-color:green;}
+	  100% {background-color:red;}
+	}
+
 	body {
-		background-image: url('images/orbits.gif');
+		/*background-image: url('images/orbits.gif');*/
+		animation-name: orbits;
 		background-color: #000000;
 		background-position: top left, top left;
 		background-size: cover;
@@ -165,7 +174,7 @@ input, select, textarea {
 	sub {
 		position: relative;
 		top: 0.5em;
-		font-size: 1.5em;
+		font-size: 3.0em;
 		color: #777;
 	}
 
@@ -1621,6 +1630,45 @@ input, select, textarea {
 				width: auto;
 			}
 
+/* Drawing */
+
+			.draw {
+				display: inline-block;
+				outline: 0;
+			}
+
+			.draw img {
+				display: block;
+				width: 100%;
+				/*border: 5px solid #555;*/
+			}
+
+			.draw.fit {
+				display: block;
+				width: 100%;
+			}
+
+			.draw.featured {
+				display: block;
+				width: 100%;
+				margin: 0 0 0.5em 0;
+			}
+
+			.draw.left {
+				float: left;
+				margin: 0 2em 2em 0;
+			}
+
+			.draw.centered {
+				display: block;
+				margin: 0 0 2.5em 0;
+			}
+
+			.draw.centered img {
+					margin: 0 auto;
+					width: auto;
+			}
+
 /* Button */
 
 	input[type="button"],
@@ -1965,7 +2013,7 @@ input, select, textarea {
 
 	#nav {
 		position: absolute;
-		right: 0;
+		right: 20em;
 		top: 0;
 		font-size: 1em;
 	}
@@ -2085,7 +2133,7 @@ input, select, textarea {
 		}
 
 		#banner p {
-			font-size: 2.75em;
+			font-size: 1.75em;
 			line-height: 1.35em;
 			margin: 0;
 		}
